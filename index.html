@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#000030]">
+    <header class="w-full fixed top-0 bg-[#08002b] z-20">
+        <nav class="max-w-5xl p-3 mx-auto flex justify-between items-center gap-3">
+            <a href="#home"><h1 class="text-white text-xl md:text-2xl lg:text-3xl font.bold">Movie App</h1></a>
+            <div class="relative flex justify-center items-center gap-[.7px]">
+                <label for="search" class="text-white absolute -left-[99999px]">Search</label>
+                 <input type="search" id="search" placeholder="search here..." class="w-[200px] py-2 px-3 lg:w-[500px] md:w-[400px] xl:w-[600px] border-none rounded-t-[32px] rounded-l-[32px] rounded-b-[32px] rounded-tr-[0px] rounded-br-[0px] bg-[#140a40] outline-none text-white">
+                 <button class="text-white font-bold py-[7.6px] px-2 bg-[#140a40] rounded-t-[32px] rounded-tl-[0px] rounded-bl-[0px] rounded-b-[32px] rounded-r-[32px] cursor-pointer" title="search" id="searchBtn">Search</button>   
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="mt-[85px] bg-backgroundimage bg-center bg-cover bg-no-repeat mx-auto  w-[95%] shadow-lg h-[100vh] sm:h-[65vh] bg-[#0c052c52] rounded-[30px]" id="home">
+            <div class="w-full h-full  flex justify-center items-center flex-col p-3">
+                <h1 class="text-[#ebfdff] text-4xl md:text-5xl  lg:text-7xl text-wrap text-center font-extrabold">Search To Get your Favoutite Movie From Data Fetched From The Best Movie DataBase</h1>
+                <div class=" relative flex justify-center items-center w-5/6 mx-auto mt-5 px-4">
+                    <label for="search-input" class="absolute left-[-99999px]">Search</label>
+                    <div class=" flex justify-center items-center">
+                    <input id="search2" type="search" placeholder="Search..." title="search" class="p-4 w-[340px] sm:w-[550px] mx-auto border-none rounded-t-[32px] rounded-l-[32px] rounded-b-[32px] rounded-tr-[0px] rounded-br-[0px] outline-none text-black font-semibold">
+                    <button class="text-black font-bold bg-white py-[16px] sm:py-[15.9px] px-2 rounded-t-[32px] rounded-tl-[0px] rounded-bl-[0px] rounded-b-[32px] rounded-r-[32px] cursor-pointer" title="search" id="searchBtn2">Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-[85px] mx-auto p-5 w-[95%] shadow-lg min-h-screen bg-[#0c052c52]">
+            <h1 class="text-center text-white text-3xl font-bold mb-2">movies</h1>
+            <hr class="w-3/4 mx-auto mb-3 sm:mb-5">
+            <div class="w-5/6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 place-items-center gap-[65px]" id="fetched-movies-par">
+                <div class="p-4 rounded-lgflex justify-center items-center flex-col text-white shadow-md shadow-[#7399f0]">
+                    <img src="img/image.jpg" alt="" class="w-[200px] h-[200px]">
+                    <h1 class="text-2xl text-white font-bold text-clip"></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit libero vitae sed maiores aspernatur vero rem eum, repudiandae nobis exercitationem maxime aliquam, assumenda culpa aliquid beatae. Consectetur maiores consequuntur dolor.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+      
+<script src="script.js"></script>
+</body>
+</html>
